@@ -1,12 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>strona</title>
+    <title>Strona Główna</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .header {
+            background-image: url('header-bg.jpg'); /* Wstaw zdjęcie w tle */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .header h1 {
+            font-size: 3.5em;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav ul li {
+            margin: 0 15px;
+        }
+
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .services {
+            background-color: #f9f9f9;
+        }
+
+        .services .service-item {
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <h1>hello word! 
-    </h1>
+    <div class="header">
+        <h1>Strona Główna</h1>
+        <p>Twoje miejsce z inspiracjami</p>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#services">Usługi</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <div class="section" id="about">
+        <h2>O nas</h2>
+        <p>Jesteśmy zespołem pasjonatów, którzy tworzą wyjątkowe doświadczenia dla naszych klientów. Naszą misją jest dostarczanie usług na najwyższym poziomie i inspirowanie innych do działania.</p>
+    </div>
+
+    <div class="section services" id="services">
+        <h2>Nasze usługi</h2>
+        <div class="service-item">- Organizacja eventów i spotkań</div>
+        <div class="service-item">- Doradztwo i szkolenia</div>
+        <div class="service-item">- Wsparcie techniczne</div>
+    </div>
+
+    <div class="section" id="gallery">
+        <h2>Galeria</h2>
+        <div class="gallery">
+            <img src="img1.jpg" alt="Zdjęcie 1">
+            <img src="img2.jpg" alt="Zdjęcie 2">
+            <img src="img3.jpg" alt="Zdjęcie 3">
+            <img src="img4.jpg" alt="Zdjęcie 4">
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Kontakt</h2>
+        <p>Masz pytania? Skontaktuj się z nami pod adresem <strong>kontakt@twojastrona.pl</strong> lub zadzwoń pod numer <strong>+48 123 456 789</strong>.</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Twoja Strona. Wszystkie prawa zastrzeżone.</p>
+    </div>
 </body>
 </html>
+
