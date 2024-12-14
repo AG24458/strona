@@ -12,7 +12,7 @@
         }
 
         .header {
-            background-image: url('header-bg.jpg'); /* Wstaw zdjęcie w tle */
+            background-image: url('pexels-burst-544961.jpg'); /* Wstaw zdjęcie w tle */
             background-size: cover;
             background-position: center;
             height: 400px;
@@ -24,7 +24,10 @@
             text-align: center;
             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
         }
-
+        #about{
+            margin-bottom: 60px;
+            margin-top: 10px;
+        }
         .header h1 {
             font-size: 3.5em;
             margin: 0;
@@ -78,11 +81,20 @@
 
         .services {
             background-color: #f9f9f9;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+
+        }
+
+        .services h2 {
+            margin-right: 20px;
         }
 
         .services .service-item {
-            margin: 20px 0;
+            margin: 20px 0px 20px 40px;
             font-size: 1.1em;
+            text-align: left;
         }
 
         .gallery {
@@ -102,9 +114,9 @@
         }
 
         .drinks {
-            background-image: url('drinks-bg.jpg'); /* Zdjęcie w tle */
+            background-image: url('tlo.jpg'); /* Zdjęcie w tle */
             background-size: cover;
-            background-position: center;
+            background-position: center top;
             color: white;
             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
             padding: 60px 20px;
@@ -115,7 +127,7 @@
         }
 
         .drinks .drink {
-            margin: 20px 0;
+            margin: 40px 0;
         }
 
         .footer {
@@ -134,7 +146,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>Strona Główna</h1>
+        <h1>NAPIJ SIĘ!</h1>
         <p>Twoje miejsce z inspiracjami</p>
     </div>
 
@@ -155,18 +167,20 @@
 
     <div class="section services" id="services">
         <h2>Nasze usługi</h2>
-        <div class="service-item">- Organizacja eventów i spotkań</div>
-        <div class="service-item">- Doradztwo i szkolenia</div>
-        <div class="service-item">- Wsparcie techniczne</div>
+        <div>
+            <div class="service-item">- Organizacja eventów i spotkań</div>
+            <div class="service-item">- Doradztwo i szkolenia</div>
+            <div class="service-item">- Wsparcie techniczne</div>
+        </div>
     </div>
 
     <div class="section" id="gallery">
         <h2>Galeria</h2>
         <div class="gallery">
-            <img src="img1.jpg" alt="Zdjęcie 1">
-            <img src="img2.jpg" alt="Zdjęcie 2">
-            <img src="img3.jpg" alt="Zdjęcie 3">
-            <img src="img4.jpg" alt="Zdjęcie 4">
+            <img src="galeria1.jpg" alt="Zdjęcie 1">
+            <img src="galeria2.jpg" alt="Zdjęcie 2">
+            <img src="galeria3.jpg" alt="Zdjęcie 3">
+            <img src="galeria4.jpg" alt="Zdjęcie 4">
         </div>
     </div>
 
